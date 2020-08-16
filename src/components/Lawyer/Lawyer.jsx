@@ -3,7 +3,7 @@ import './Lawyer.scss'
 
 const Lawyer = () => {
 
-  const Image = 'https://i.pinimg.com/originals/09/0a/63/090a63604e6f58e67a496861fcad41bd.png'
+  const Image = "https://i.pinimg.com/originals/09/0a/63/090a63604e6f58e67a496861fcad41bd.png";
 
   return (
     <div className="Lawyer">
