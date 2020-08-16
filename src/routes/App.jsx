@@ -4,27 +4,19 @@ import '../assets/styles/containers/App.scss';
 import { Link, BrowserRouter, Route, Switch } from 'react-router-dom';
 import Containers from '../components/Containers/Containers';
 import Layout from '../components/Layout';
-import HelloWorld from '../components/HelloWorld/HelloWorld';
+import Lawyer from '../components/Lawyer/Lawyer';
 
 function App() {
   return (
-    // <ProductsProvider>
     <BrowserRouter>
       <Layout>
         <Containers>
           <Switch>
-            <Route exact path='/' component={HelloWorld} />
+            <Route exact path='/' component={Lawyer} />
           </Switch>
-
-          <ul>
-            <li>
-              <Link to='/anotherpage'>Test Router</Link>
-            </li>
-          </ul>
         </Containers>
       </Layout>
     </BrowserRouter>
-    // </ProductsProvider>
   );
 }
 

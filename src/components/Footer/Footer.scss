@@ -1,11 +1,33 @@
 .Footer {
   background-color: var(--principal);
   display: flex;
-  justify-content: flex-end;
   padding: 0.7em 0;
   position: fixed;
   bottom: 0;
   width: 100vw;
+  color: var(--principal-contrast);
+  justify-content: space-around;
+
+  &__Contact {
+
+
+    &--Data {
+      display: grid;
+    }
+
+    &--Whatsapp {
+      background-color: var(--white);
+      font-size: 3.5em;
+      position: absolute;
+      right: 1em;
+      top: 0;
+
+      a {
+        color: #1BD741;
+      }
+    }
+  }
+
 
   &--social-networks {
     padding: 0 1em;

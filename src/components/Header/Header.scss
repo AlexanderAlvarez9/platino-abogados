@@ -1,5 +1,21 @@
 .Header {
   background-color: var(--principal);
+  display: flex;
+  color: var(--principal-contrast);
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 1em;
+    list-style: none;
+  }
+
+
+  &__logo {
+    //
+  }
 
   &__title {
     font-size: 2em;
