@@ -2,10 +2,13 @@ import React from 'react';
 import './Lawyer.scss'
 
 const Lawyer = () => {
+
+  const Image = 'https://i.pinimg.com/originals/09/0a/63/090a63604e6f58e67a496861fcad41bd.png'
+
   return (
     <div className="Lawyer">
       <section className="Lawyer__Profile">
-        <img src="" alt="Foto" />
+        <img className="Lawyer__Profile--Image" src={Image} alt="Foto" />
         <div className="Lawyer__Profile--Info">
           <span>
             <b>Telefono: </b> 321 321 1234
