@@ -1,0 +1,19 @@
+.AboutUs {
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__Profile {
+    display: grid;
+
+    &--Image {
+      width: 400px;
+    }
+
+    &--Info {
+      display: inherit;
+      margin: 1em;
+      height: auto;
+    }
+  }
+}

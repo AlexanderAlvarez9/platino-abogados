@@ -33,6 +33,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:visited {
   color: var(--link);
 }

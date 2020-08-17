@@ -10,15 +10,23 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="Header__Logo">
-        <img src={Logo} alt="" />
+        <Link to="/"><img src={Logo} alt="" /></Link>
       </div>
       <ul className="Header__Menu">
-        <li>Quienes Somos</li>
-        <li>Areas de Practica</li>
-        <li>Servicios</li>
-        <li>Abogados</li>
+        <li>
+          <Link to="/aboutus">Quienes Somos</Link>
+        </li>
+        {/* <li>Areas de Practica</li> */}
+        <li>
+          <Link to="/services">Servicios</Link>
+        </li>
+        <li>
+          <Link to="/lawyer">Abogados</Link>
+        </li>
         <li>Articulos</li>
-        <li>Contacto</li>
+        <li>
+          <Link to="/contact">Contacto</Link>
+        </li>
       </ul>
     </div>
   )
