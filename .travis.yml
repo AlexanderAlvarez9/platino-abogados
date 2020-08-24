@@ -14,7 +14,7 @@ deploy:
   cleanup: false
   keep_history: true
   github-token: $GITHUB_TOKEN
-  local_dir: dist/
+  local_dir: build/
   project_name: "PlatinoAbogados"
   target_branch: gh-pages
   commit_message: "Deploy Release from: %{git_branch} & with message: %{git_commit_msg}"
