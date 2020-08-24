@@ -4,7 +4,7 @@
   "description": "Platino Abogados Page",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production && firebase deploy",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "eslint": "eslint src/ --fix",
     "format": "prettier --write '{*.js,src/**/*.{js,jsx}}'",
