@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: './src/index.js', /*referencia al archivo principal*/
   output: {   /*resolve permite detectar el __dirname directorio en el que estamos y pasandole un directorio para guardar los archivos*/
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js', /* filename es el nombre del archivo final */
   }, /*output donde se guardan los archivos resultantes cuando se haga la compilación*/
   resolve: {
