@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/containers/App.scss';
 
-import { Link, BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Containers from '../components/Containers/Containers';
 import Layout from '../components/Layout';
 import Lawyer from '../components/Lawyer/Lawyer';
@@ -14,13 +14,13 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Containers>
-          <Switch>
-            <Route exact path='/' component={Lawyer} />
-            <Route exact path='/lawyer' component={Lawyer} />
-            <Route exact path='/contact' component={Contact} />
-            <Route exact path='/services' component={Services} />
-            <Route exact path='/aboutus' component={AboutUs} />
-          </Switch>
+          <Routes>
+            <Route path='/' element={<Lawyer />} />
+            <Route path='/lawyer' element={<Lawyer />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/aboutus' element={<AboutUs />} />
+          </Routes>
         </Containers>
       </Layout>
     </BrowserRouter>
